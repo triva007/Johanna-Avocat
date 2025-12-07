@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Page } from '../../types';
 import { ArrowRight, ChevronRight, Star, Quote, Phone, Plus, Minus, Mic2, Tv, Newspaper, Radio, Scale, Shield, Clock } from 'lucide-react';
+import { Seo } from '../Seo';
 
 interface HomeViewProps {
   onNavigate: (page: Page) => void;
@@ -30,10 +31,14 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
 
   return (
     <div className="animate-fade-in font-sans selection:bg-gold-500 selection:text-white">
+      <Seo 
+        title="Accueil" 
+        description="Maître Johanna Ostrowka, Avocat à la Cour de Versailles. Expertise en Droit de la famille, Droit pénal et Droit du travail. Cabinet réputé pour sa défense rigoureuse." 
+      />
       
-      {/* 1. HERO SECTION - Retour de la photo de Johanna */}
+      {/* 1. HERO SECTION */}
       <section className="relative min-h-[85vh] w-full bg-navy-950 text-white overflow-hidden flex items-center">
-        {/* Background Overlay */}
+        {/* Background Overlay - Priority Loading */}
         <div 
           className="absolute inset-0 bg-cover bg-center z-0 opacity-20"
           style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')" }}
@@ -45,7 +50,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           <div className="md:w-1/2 space-y-10 animate-slide-up py-12 md:py-0">
             <div className="flex items-center space-x-4">
                <div className="h-[1px] w-12 bg-gold-400"></div>
-               <span className="text-gold-400 uppercase tracking-[0.2em] text-xs font-semibold">Avocat au Barreau de Versailles</span>
+               <h2 className="text-gold-400 uppercase tracking-[0.2em] text-xs font-semibold">Avocat au Barreau de Versailles</h2>
             </div>
             
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-medium leading-[1.1] tracking-tight">
@@ -61,6 +66,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                <button 
                 onClick={() => onNavigate(Page.CONTACT)}
                 className="group relative px-8 py-4 bg-transparent border border-white text-white font-medium uppercase tracking-widest text-xs hover:bg-white hover:text-navy-950 transition-all duration-500"
+                aria-label="Prendre rendez-vous avec le cabinet"
                >
                  Prendre rendez-vous
                </button>
@@ -77,13 +83,17 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
             </div>
           </div>
 
-          {/* Image Flottante Hero - Photo 1 */}
+          {/* Image Flottante Hero - Eager Loading (Above the fold) */}
           <div className="hidden md:block md:w-5/12 relative animate-fade-in delay-300">
              <div className="relative z-10">
                 <img 
                   src="https://i.postimg.cc/63r2Svzw/unnamed.jpg" 
-                  alt="Maître Johanna Ostrowka" 
+                  alt="Maître Johanna Ostrowka - Avocat Versailles" 
                   className="w-full h-auto object-cover shadow-2xl grayscale-[10%] contrast-[1.1] rounded-sm"
+                  width="600"
+                  height="800"
+                  loading="eager"
+                  fetchPriority="high"
                 />
                 {/* Cadre décoratif fin */}
                 <div className="absolute top-6 -right-6 w-full h-full border border-gold-500/30 -z-10 hidden lg:block"></div>
@@ -117,7 +127,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
         </div>
       </div>
 
-      {/* 3. NOUVELLE SECTION INTERMÉDIAIRE - VALEURS (Pour espacer les photos) */}
+      {/* 3. NOUVELLE SECTION INTERMÉDIAIRE - VALEURS */}
       <section className="py-24 bg-navy-50 border-b border-gray-200">
          <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -160,7 +170,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
       </section>
 
       <div className="bg-white">
-        {/* 4. SECTION PORTRAIT - La présentation détaillée - Utilisation de la Photo 2 */}
+        {/* 4. SECTION PORTRAIT - Lazy Load image */}
         <section className="max-w-7xl mx-auto px-6 lg:px-8 py-32">
           <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24 relative">
             
@@ -197,8 +207,11 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                <div className="relative w-full max-w-md mx-auto">
                   <img 
                     src="https://i.postimg.cc/yx7BNgK4/unnamed.jpg" 
-                    alt="Maître Johanna Ostrowka" 
+                    alt="Portrait Maître Johanna Ostrowka - Avocat en Droit de la Famille" 
                     className="w-full h-[650px] object-cover shadow-2xl z-10 relative grayscale-[10%]"
+                    loading="lazy"
+                    width="600"
+                    height="650"
                   />
                   
                   {/* Bloc Citation "Flat Design" Épuré */}
@@ -214,7 +227,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
           </div>
         </section>
 
-        {/* 5. SECTION COMPÉTENCES - Style Minimaliste */}
+        {/* 5. SECTION COMPÉTENCES */}
         <section className="py-32 bg-navy-50">
            <div className="max-w-7xl mx-auto px-6 lg:px-8">
               <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-gray-200 pb-8">
@@ -238,7 +251,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                        <img 
                         src={item.img} 
                         alt={item.title} 
-                        className="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700 scale-100 group-hover:scale-105" 
+                        className="w-full h-full object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700 scale-100 group-hover:scale-105"
+                        loading="lazy" 
+                        width="300"
+                        height="450"
                        />
                        {/* Overlay Content */}
                        <div className="absolute inset-0 p-8 flex flex-col justify-between">
@@ -267,7 +283,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
            </div>
         </section>
 
-        {/* 6. SECTION AVIS - Noir profond & Or */}
+        {/* 6. SECTION AVIS */}
         <section className="relative py-32 bg-navy-950 text-white overflow-hidden">
            <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
               <div className="mb-10 flex justify-center">
@@ -289,7 +305,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
            </div>
         </section>
 
-        {/* 7. SPLIT SECTION FAQ (Functional) */}
+        {/* 7. SPLIT SECTION FAQ */}
         <section className="grid grid-cols-1 lg:grid-cols-2">
            <div className="bg-white p-16 lg:p-24 flex flex-col justify-center border-b lg:border-b-0 lg:border-r border-gray-100">
               <span className="text-brand-red font-bold uppercase tracking-widest text-xs mb-6">Foire aux questions</span>

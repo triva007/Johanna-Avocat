@@ -1,9 +1,15 @@
 import React from 'react';
 import { Award, Briefcase, GraduationCap, Quote } from 'lucide-react';
+import { Seo } from '../Seo';
 
 export const CabinetView: React.FC = () => {
   return (
     <div className="animate-fade-in pb-20 font-sans">
+      <Seo 
+        title="Le Cabinet" 
+        description="Découvrez le parcours de Maître Johanna Ostrowka. Avocate à Versailles, diplômée de l'Université Panthéon-Assas, spécialisée dans la défense des mineurs et le droit des victimes." 
+      />
+
       {/* Header Minimaliste */}
       <div className="bg-navy-950 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -58,8 +64,9 @@ export const CabinetView: React.FC = () => {
               <div className="relative">
                 <img 
                   src="https://i.postimg.cc/yx7BNgK4/unnamed.jpg" 
-                  alt="Portrait Johanna Ostrowka" 
+                  alt="Portrait Johanna Ostrowka - Avocat Versailles" 
                   className="w-full h-auto shadow-lg grayscale-[10%]"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 border-4 border-white/20"></div>
               </div>

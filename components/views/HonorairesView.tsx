@@ -1,9 +1,14 @@
 import React from 'react';
 import { FileText, Clock, PieChart, Coins, Check, AlertCircle } from 'lucide-react';
+import { Seo } from '../Seo';
 
 export const HonorairesView: React.FC = () => {
   return (
     <div className="animate-fade-in font-sans text-navy-950 bg-white">
+      <Seo 
+        title="Honoraires" 
+        description="Transparence des honoraires du cabinet d'avocat Ostrowka. Facturation au temps passé, au forfait ou au résultat selon la nature du dossier." 
+      />
       
       {/* Header Minimaliste */}
       <div className="bg-navy-50 py-24 border-b border-gray-100">

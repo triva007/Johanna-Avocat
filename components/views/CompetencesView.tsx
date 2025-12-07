@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Gavel, HeartHandshake, Baby, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Seo } from '../Seo';
 
 export const CompetencesView: React.FC = () => {
   const competences = [
@@ -58,6 +59,11 @@ export const CompetencesView: React.FC = () => {
 
   return (
     <div className="animate-fade-in bg-navy-950 min-h-screen text-white font-sans selection:bg-brand-red">
+      <Seo 
+        title="Nos Compétences" 
+        description="Expertises juridiques : Droit de la famille (Divorce, Garde), Droit pénal (Défense, Victimes), Droit du travail (Licenciement) et Droit des mineurs." 
+      />
+
       {/* Hero Section */}
       <div className="relative py-24 border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">

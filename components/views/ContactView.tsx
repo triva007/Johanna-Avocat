@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react';
+import { Seo } from '../Seo';
 
 export const ContactView: React.FC = () => {
   const [formStatus, setFormStatus] = useState<'idle' | 'success'>('idle');
@@ -12,6 +13,10 @@ export const ContactView: React.FC = () => {
 
   return (
     <div className="animate-fade-in min-h-screen flex flex-col lg:flex-row font-sans">
+      <Seo 
+        title="Contact" 
+        description="Prenez rendez-vous avec le Cabinet Ostrowka à Versailles. Contactez-nous par téléphone ou email pour une première consultation juridique." 
+      />
       
       {/* LEFT SIDE - INFO (Dark) */}
       <div className="lg:w-5/12 bg-navy-950 text-white p-12 lg:p-20 flex flex-col justify-between relative overflow-hidden">
