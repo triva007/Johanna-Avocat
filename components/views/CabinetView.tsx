@@ -4,33 +4,33 @@ import { Seo } from '../Seo';
 
 export const CabinetView: React.FC = () => {
   return (
-    <div className="animate-fade-in pb-20 font-sans">
+    <div className="animate-fade-in pb-12 md:pb-20 font-sans">
       <Seo 
         title="Le Cabinet" 
         description="Découvrez le parcours de Maître Johanna Ostrowka. Avocate à Versailles, diplômée de l'Université Panthéon-Assas, spécialisée dans la défense des mineurs et le droit des victimes." 
       />
 
       {/* Header Minimaliste */}
-      <div className="bg-navy-950 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs mb-4 block">Notre identité</span>
-          <h1 className="text-5xl md:text-6xl font-serif font-medium">Le Cabinet</h1>
+      <div className="bg-navy-950 text-white py-16 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <span className="text-gold-400 font-bold uppercase tracking-widest text-xs mb-3 md:mb-4 block">Notre identité</span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-medium">Le Cabinet</h1>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 -mt-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-8 md:-mt-12 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
           
           {/* Main Content */}
-          <div className="lg:col-span-8 bg-white p-8 md:p-12 shadow-sm border border-gray-100">
-            <div className="space-y-12">
+          <div className="lg:col-span-8 bg-white p-6 md:p-8 lg:p-12 shadow-sm border border-gray-100">
+            <div className="space-y-8 md:space-y-12">
                <section>
-                 <h2 className="text-3xl font-serif font-medium text-navy-950 mb-8">Une approche humaine et rigoureuse</h2>
-                 <div className="prose prose-lg text-gray-600 text-justify font-light leading-loose">
-                   <p className="mb-6 first-letter:text-5xl first-letter:font-serif first-letter:text-navy-950 first-letter:float-left first-letter:mr-4 first-letter:mt-[-8px]">
+                 <h2 className="text-2xl md:text-3xl font-serif font-medium text-navy-950 mb-6 md:mb-8">Une approche humaine et rigoureuse</h2>
+                 <div className="prose prose-lg text-gray-600 text-justify font-light leading-relaxed md:leading-loose">
+                   <p className="mb-4 md:mb-6 first-letter:text-4xl md:first-letter:text-5xl first-letter:font-serif first-letter:text-navy-950 first-letter:float-left first-letter:mr-3 md:first-letter:mr-4 first-letter:mt-[-6px]">
                      Situé au cœur de Versailles, le cabinet de Maître Johanna OSTROWKA offre un espace d'écoute et de stratégie juridique dédié à la défense de vos intérêts.
                    </p>
-                   <p className="mb-6">
+                   <p className="mb-4 md:mb-6">
                      Titulaire d'une Maîtrise de Droit privé général et d'un DEA de Droit international privé de l'Université Paris II Panthéon-Assas, Maître Ostrowka exerce au Barreau de Versailles depuis 2008. Elle a forgé son expérience au sein de cabinets reconnus avant de fonder sa propre structure.
                    </p>
                    <p>
@@ -39,17 +39,17 @@ export const CabinetView: React.FC = () => {
                  </div>
                </section>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="bg-navy-50 p-8">
-                     <Award className="h-8 w-8 text-brand-red mb-4" />
-                     <h3 className="text-lg font-serif font-bold text-navy-950 mb-3">Avocats d'enfants</h3>
+               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                  <div className="bg-navy-50 p-6 md:p-8">
+                     <Award className="h-6 w-6 md:h-8 md:w-8 text-brand-red mb-3 md:mb-4" />
+                     <h3 className="text-base md:text-lg font-serif font-bold text-navy-950 mb-2 md:mb-3">Avocats d'enfants</h3>
                      <p className="text-sm text-gray-600 leading-relaxed">
                        Membre du groupe Avocats d'enfants depuis 15 ans, Maître Ostrowka possède une expertise reconnue pour faire entendre la voix des mineurs en justice.
                      </p>
                   </div>
-                  <div className="bg-navy-50 p-8">
-                     <Briefcase className="h-8 w-8 text-brand-red mb-4" />
-                     <h3 className="text-lg font-serif font-bold text-navy-950 mb-3">Partenariats</h3>
+                  <div className="bg-navy-50 p-6 md:p-8">
+                     <Briefcase className="h-6 w-6 md:h-8 md:w-8 text-brand-red mb-3 md:mb-4" />
+                     <h3 className="text-base md:text-lg font-serif font-bold text-navy-950 mb-2 md:mb-3">Partenariats</h3>
                      <p className="text-sm text-gray-600 leading-relaxed">
                        Collaboration étroite avec Maître Nicolas GOUTX (Barreau de Versailles), renforçant notre pôle de compétences en droit pénal et droit des victimes.
                      </p>
@@ -59,7 +59,7 @@ export const CabinetView: React.FC = () => {
           </div>
 
           {/* Sidebar */}
-          <div className="lg:col-span-4 space-y-8 pt-12 lg:pt-0">
+          <div className="lg:col-span-4 space-y-8 pt-4 lg:pt-0">
             <div className="sticky top-28 space-y-8">
               <div className="relative">
                 <img 
@@ -71,12 +71,12 @@ export const CabinetView: React.FC = () => {
                 <div className="absolute inset-0 border-4 border-white/20"></div>
               </div>
 
-              <div className="bg-navy-950 text-white p-8 shadow-xl">
-                <h3 className="text-xl font-serif font-medium mb-8 text-gold-400 border-b border-gray-800 pb-4">Parcours & Formation</h3>
+              <div className="bg-navy-950 text-white p-6 md:p-8 shadow-xl">
+                <h3 className="text-lg md:text-xl font-serif font-medium mb-6 md:mb-8 text-gold-400 border-b border-gray-800 pb-4">Parcours & Formation</h3>
                 
-                <div className="space-y-8">
+                <div className="space-y-6 md:space-y-8">
                   <div className="flex group">
-                    <GraduationCap className="h-5 w-5 text-brand-red mr-4 mt-1 group-hover:text-gold-400 transition-colors" />
+                    <GraduationCap className="h-5 w-5 text-brand-red mr-4 mt-1 group-hover:text-gold-400 transition-colors flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-sm uppercase tracking-wide mb-1">Université Panthéon-Assas</h4>
                       <p className="text-sm text-gray-400 font-light">
@@ -87,7 +87,7 @@ export const CabinetView: React.FC = () => {
                   </div>
 
                   <div className="flex group">
-                    <Quote className="h-5 w-5 text-brand-red mr-4 mt-1 group-hover:text-gold-400 transition-colors" />
+                    <Quote className="h-5 w-5 text-brand-red mr-4 mt-1 group-hover:text-gold-400 transition-colors flex-shrink-0" />
                     <div>
                       <h4 className="font-bold text-sm uppercase tracking-wide mb-1">Barreau de Versailles</h4>
                       <p className="text-sm text-gray-400 font-light">
