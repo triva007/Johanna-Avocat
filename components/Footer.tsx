@@ -22,22 +22,22 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-4">
                <div className="flex items-start text-gray-400 hover:text-white transition-colors">
                   <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0 text-brand-red" />
-                  <span className="text-sm">7 rue Claude Chahu, 75116 Paris<br/>(Exemple Adresse)</span>
+                  <span className="text-sm">47 rue du Maréchal Foch<br/>78000 Versailles</span>
                </div>
                <div className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Phone className="h-5 w-5 mr-3 text-brand-red" />
-                  <span className="text-sm">+33 (0) 1 45 33 50 73</span>
+                  <span className="text-sm">09 56 12 94 25</span>
                </div>
                <div className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Mail className="h-5 w-5 mr-3 text-brand-red" />
-                  <span className="text-sm">contact@goldwin-avocats.com</span>
+                  <span className="text-sm">jostrowka.avocat@gmail.com</span>
                </div>
             </div>
 
             <div className="pt-4">
                <h4 className="text-sm font-bold mb-3">Suivez-nous</h4>
                <div className="flex space-x-4">
-                 <a href="#" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors">
+                 <a href="https://fr.linkedin.com/in/johanna-ostrowka-3b1b3b1b" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-gray-800 flex items-center justify-center hover:bg-brand-red transition-colors">
                    <Linkedin className="h-4 w-4" />
                  </a>
                </div>
@@ -93,7 +93,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         </div>
         
         <div className="border-t border-gray-800 mt-16 pt-8 text-center text-xs text-gray-600">
-          <p>Copyright 2025 GOLDWIN SOCIETE D'AVOCATS. Tous droits réservés.</p>
+          <p>Copyright 2025 Cabinet Johanna Ostrowka. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

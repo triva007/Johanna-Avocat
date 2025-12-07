@@ -36,7 +36,7 @@ export const ContactView: React.FC = () => {
                   <Phone className="h-5 w-5 mr-3" />
                   <span className="text-xs font-bold uppercase tracking-widest">Téléphone</span>
                </div>
-               <p className="text-3xl font-serif group-hover:text-brand-red transition-colors">01 45 33 50 73</p>
+               <p className="text-3xl font-serif group-hover:text-brand-red transition-colors">09 56 12 94 25</p>
                <p className="text-sm text-gray-500 mt-1">Du Lundi au Vendredi, 9h - 19h</p>
             </div>
 
@@ -46,8 +46,8 @@ export const ContactView: React.FC = () => {
                   <span className="text-xs font-bold uppercase tracking-widest">Cabinet</span>
                </div>
                <p className="text-lg text-gray-200">
-                  7 rue Claude Chahu<br/>
-                  75116 Paris
+                  47 rue du Maréchal Foch<br/>
+                  78000 Versailles
                </p>
             </div>
 
@@ -56,8 +56,8 @@ export const ContactView: React.FC = () => {
                   <Mail className="h-5 w-5 mr-3" />
                   <span className="text-xs font-bold uppercase tracking-widest">Email</span>
                </div>
-               <a href="mailto:contact@goldwin-avocats.com" className="text-lg text-gray-200 hover:text-white border-b border-gray-700 hover:border-white transition-all pb-1 inline-block">
-                  contact@goldwin-avocats.com
+               <a href="mailto:jostrowka.avocat@gmail.com" className="text-lg text-gray-200 hover:text-white border-b border-gray-700 hover:border-white transition-all pb-1 inline-block">
+                  jostrowka.avocat@gmail.com
                </a>
             </div>
          </div>

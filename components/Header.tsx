@@ -59,9 +59,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
             ))}
             
             {/* CTA Button Style Goldwin */}
-            <a href="tel:01XXXXXXXX" className="ml-6 bg-brand-red hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold transition-colors flex items-center">
+            <a href="tel:0956129425" className="ml-6 bg-brand-red hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold transition-colors flex items-center">
               <Phone className="w-4 h-4 mr-2" />
-              01 XX XX XX XX
+              09 56 12 94 25
             </a>
           </nav>
 
@@ -99,9 +99,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               </button>
             ))}
             <div className="pt-4 mt-4 border-t border-gray-700">
-               <button className="w-full bg-brand-red text-white py-3 rounded font-bold uppercase tracking-wider">
-                 01 XX XX XX XX
-               </button>
+               <a href="tel:0956129425" className="block w-full bg-brand-red text-white py-3 rounded font-bold uppercase tracking-wider text-center">
+                 09 56 12 94 25
+               </a>
             </div>
           </div>
         </div>
