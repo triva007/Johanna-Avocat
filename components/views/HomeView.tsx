@@ -242,7 +242,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                  {[
-                    { title: "Droit de la famille", img: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", subtitle: "Divorce, Séparation" },
+                    { title: "Droit de la famille", img: "https://www.charlesullman.com/wp-content/uploads/2022/01/couples-use-same-lawyer-divorce.jpg", subtitle: "Divorce, Séparation" },
                     { title: "Droit pénal", img: "https://images.unsplash.com/photo-1505664194779-8beaceb93744?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", subtitle: "Défense, Victimes" },
                     { title: "Droit du travail", img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", subtitle: "Contentieux salarié" },
                     { title: "Droit des enfants", img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80", subtitle: "Protection mineurs" },
