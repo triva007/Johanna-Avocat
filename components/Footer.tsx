@@ -22,11 +22,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <div className="space-y-4">
                <div className="flex items-start text-gray-400 hover:text-white transition-colors">
                   <MapPin className="h-5 w-5 mr-3 mt-1 flex-shrink-0 text-brand-red" />
-                  <span className="text-sm">47 rue du Maréchal Foch<br/>78000 Versailles</span>
+                  <span className="text-sm">19 Rue Georges Clemenceau<br/>78000 Versailles</span>
                </div>
                <div className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Phone className="h-5 w-5 mr-3 text-brand-red" />
-                  <span className="text-sm">09 56 12 94 25</span>
+                  <span className="text-sm">01 39 50 02 28</span>
                </div>
                <div className="flex items-center text-gray-400 hover:text-white transition-colors">
                   <Mail className="h-5 w-5 mr-3 text-brand-red" />

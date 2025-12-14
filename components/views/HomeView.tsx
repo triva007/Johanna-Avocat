@@ -77,7 +77,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                   </div>
                   <div>
                      <span className="block text-[10px] text-gray-400 uppercase tracking-wider">Permanence téléphonique</span>
-                     <span className="block text-lg font-serif text-white">09 56 12 94 25</span>
+                     <span className="block text-lg font-serif text-white">01 39 50 02 28</span>
                   </div>
                </div>
             </div>
@@ -350,7 +350,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate }) => {
                      </div>
                      <div>
                         <span className="block text-xs uppercase tracking-wider text-gray-400 mb-1">Appelez-nous</span>
-                        <a href="tel:0956129425" className="block text-xl md:text-2xl font-serif font-medium text-navy-950 hover:text-brand-red transition-colors">09 56 12 94 25</a>
+                        <a href="tel:0139500228" className="block text-xl md:text-2xl font-serif font-medium text-navy-950 hover:text-brand-red transition-colors">01 39 50 02 28</a>
                      </div>
                   </div>
                   <button onClick={() => onNavigate(Page.CONTACT)} className="w-full py-4 bg-navy-950 text-white font-bold uppercase tracking-widest text-xs hover:bg-brand-red transition-colors">

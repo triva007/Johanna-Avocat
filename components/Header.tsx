@@ -59,15 +59,15 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
             ))}
             
             {/* CTA Button Style Goldwin */}
-            <a href="tel:0956129425" className="ml-6 bg-brand-red hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold transition-colors flex items-center">
+            <a href="tel:0139500228" className="ml-6 bg-brand-red hover:bg-red-700 text-white px-6 py-2 rounded text-sm font-bold transition-colors flex items-center">
               <Phone className="w-4 h-4 mr-2" />
-              09 56 12 94 25
+              01 39 50 02 28
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center">
-            <a href="tel:0956129425" className="mr-4 bg-brand-red text-white p-2 rounded-full shadow-lg">
+            <a href="tel:0139500228" className="mr-4 bg-brand-red text-white p-2 rounded-full shadow-lg">
                <Phone className="h-4 w-4" />
             </a>
             <button
@@ -103,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
               </button>
             ))}
             <div className="pt-6 mt-4">
-               <a href="tel:0956129425" className="block w-full bg-brand-red text-white py-4 rounded font-bold uppercase tracking-wider text-center shadow-md active:bg-red-800">
+               <a href="tel:0139500228" className="block w-full bg-brand-red text-white py-4 rounded font-bold uppercase tracking-wider text-center shadow-md active:bg-red-800">
                  Appeler le cabinet
                </a>
             </div>

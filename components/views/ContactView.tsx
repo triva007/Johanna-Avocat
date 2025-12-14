@@ -41,7 +41,7 @@ export const ContactView: React.FC = () => {
                   <Phone className="h-5 w-5 mr-3" />
                   <span className="text-xs font-bold uppercase tracking-widest">Téléphone</span>
                </div>
-               <a href="tel:0956129425" className="text-2xl md:text-3xl font-serif group-hover:text-brand-red transition-colors block">09 56 12 94 25</a>
+               <a href="tel:0139500228" className="text-2xl md:text-3xl font-serif group-hover:text-brand-red transition-colors block">01 39 50 02 28</a>
                <p className="text-sm text-gray-500 mt-1">Du Lundi au Vendredi, 9h - 19h</p>
             </div>
 
@@ -51,7 +51,7 @@ export const ContactView: React.FC = () => {
                   <span className="text-xs font-bold uppercase tracking-widest">Cabinet</span>
                </div>
                <p className="text-base md:text-lg text-gray-200">
-                  47 rue du Maréchal Foch<br/>
+                  19 Rue Georges Clemenceau<br/>
                   78000 Versailles
                </p>
             </div>
